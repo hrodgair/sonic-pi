@@ -19,3 +19,9 @@ define :sample_degrees do
   end
   degrees.ring
 end
+
+# returns the degrees in a scale as sample play rates 
+# @param scalename Scale symbol (e.g. ':minor')
+define :scale2rates do |scalename|
+  scale(:c0-12, scalename)
+end
